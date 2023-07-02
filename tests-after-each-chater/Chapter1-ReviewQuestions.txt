@@ -1,0 +1,48 @@
+1. B, E, F - wrong
+2. C, F - wrong
+3. C, D
+4. C, D
+5. A, C, D, E
+6. E
+7. A, B, C
+8. A, B
+9. B 
+10. E
+11. C, D
+12. E - wrong
+13. C
+14. A, B, E - wrong
+15. D - wrong
+16. D
+17. A, E
+18. C, D, E
+19. B, C
+20. A, B, E 
+
+Working on mistakes:
+	
+	1 - B, E 	
+		option F) is incorrect. 
+		While java supports functional programming, it is still not considered to be a functional programming language
+	
+	2 - C, D 
+		option F) is incorrect.
+		option F) supposes that we input the .class file's full name along with its extenstion when running 'java' command. 
+		I did not pay enough attention to option D
+		
+	12 - C, E 
+		I missed option C) 
+		When compiling with javac you can specify classpath -cp not only directory -d. So C) is also correct option. 
+	
+	13 - C
+		everything is correct, just wanted to note that although javac can use both -d and -cp java can only lavarage -cp 
+	
+	14 - A, B, C, E 
+		I missed option C)
+		You can use classpath -cp with jar command 
+		
+	15 - E
+		option D) is incorrect. 
+		The main method here does not contain a static keyword!! Be more attentive!! 
+	
+	
