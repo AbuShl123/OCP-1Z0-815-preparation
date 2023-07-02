@@ -1,0 +1,70 @@
+--- Welcome to Java --- 
+
+
+Java Components inside a JDK 
+	
+	- compiler (javac) - turn .java file to bytecode: .class file
+	- launcher (java) - creates the JVM that executes the .class files
+	- arhiever (jar) - to package files together
+	- API documentation (javadoc) - for generating documentation 
+	- API itself (Application Programming interface) - java oficial library 
+	
+<!> In Java 11 the JRE was removed 
+
+Benefits of Java: 
+	
+	- Object Oriented - code is written inside the classes
+	- Encapsulation - access modifiers to protect data from altering 
+	- Platform Independency - write once run everywhere 
+	- Robust - automatc memory management: garbage collector 
+	- Simple - simpler than C++ syntax and no operator overloading is here 
+	- Secure - code is running inside a JVM - a sandbox, this prevents code to do evil things to the computer it is running on 
+	- Multithreaded - can run several snippets of code at the same time 
+	- Backwards Compatibility - older programs work fine with newer java versions 
+
+=========================================================================================================================================
+--- Running java code --- 
+
+How to compile and run java programs using Alternate Directory: 
+
+		1. Compile the .java file: 
+			javac -d classes packageb.ClassB.java
+		2. the compiled .class files will be stored in one target directory - 'classes' with preserved package structure
+		3. to run compiled files run one of the following commands: 
+			java -cp classes path/to/MyFile
+			java -classpath classes packageb.ClassB
+			java --class-path classes packageb.ClassB
+			
+__________________________________________________________________________
+__________________________________________________________________________			
+			
+How to create jar files: 
+		
+		- you can create a jar file using files in a current directory. 
+		  the following commands will create a day1.jar file containing of files located in the current directory 
+			
+			jar -cvf day1.jar . 
+			jar --create --verbose --file day1.jar . 
+			
+<!> you can separate the -cvf to -c -v -f and it will still work 
+<!> never forget to add . (dot) in the end 
+			
+		- You can also specify the directory instead of using the current one: 
+			
+			jar -cvf day1.jar -C classes . 
+			
+__________________________________________________________________________	
+__________________________________________________________________________
+	
+Hot to run a jar file that consists of .class files: 
+		
+		- First of all make sure that a jar file that you created beforehand has .class files inside of it 
+		
+		- Now use the following line of code to run a specific .class file stored in a jar file (day1.jar file in this example): 
+			
+			java -cp ".;day1.jar" path.to.MyClass
+		
+		- It is also possible to use wildCards to include all jar files within one specified directory: 
+		   
+			java -cp "C:\temp\directoryWithJars\*" path.to.MyClass
+		
