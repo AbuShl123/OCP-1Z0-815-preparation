@@ -1,0 +1,47 @@
+As the old saying goes, you have to learn how to walk before
+you can run. Likewise, you have to learn the basics of Java
+before you can build complex programs....
+
+
+------------------------------------------------------------>
+
+
+
+Order of initializtion: 
+	
+	1. Instance fields or instance blocks (initialized in order they go in the file) 
+	2. Constructor
+	
+public class Chicken {
+	int eggs = 10;
+	{System.out.println(eggs)}
+	{eggs = 12}
+	
+	public static void main(String[] args) {
+		Chicken obj = new Chicken(); 
+		System.out.println(obj.eggs);
+	}
+}
+
+// OUTPUT: 12 
+
+	<!> We cannot print a field before its initialization: 	
+		
+public class Chicken {
+	{System.out.println(eggs)} // DOES NOT COMPILE 
+	int eggs = 12; 
+}
+
+
+Primitive datatypes: 
+	
+	char ---> -128 to 127 
+	why? Because 0 is also positive.  
+
+	very important: 
+	
+		'short' is 	16-bit data type
+		'char' is also 	16-bit data type 
+		
+		HOWEVER: the char is unsigned. It means it does not include negative values, so it has more memory for positive values. 
+		         In other words char can handle more positive values.
