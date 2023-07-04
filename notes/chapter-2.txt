@@ -7,41 +7,107 @@ before you can build complex programs....
 
 
 
-Order of initializtion: 
+	Order of initializtion: 
 	
-	1. Instance fields or instance blocks (initialized in order they go in the file) 
-	2. Constructor
-	
-public class Chicken {
-	int eggs = 10;
-	{System.out.println(eggs)}
-	{eggs = 12}
-	
-	public static void main(String[] args) {
-		Chicken obj = new Chicken(); 
-		System.out.println(obj.eggs);
-	}
-}
+		1. Instance fields or instance blocks (initialized in order they go in the file) 
+		2. Constructor
+		
+		public class Chicken {
+			int eggs = 10;
+			{System.out.println(eggs)}
+			{eggs = 12}
+			
+			public static void main(String[] args) {
+				Chicken obj = new Chicken(); 
+				System.out.println(obj.eggs);
+			}
+		}
 
 // OUTPUT: 12 
 
-	<!> We cannot print a field before its initialization: 	
-		
-public class Chicken {
-	{System.out.println(eggs)} // DOES NOT COMPILE 
-	int eggs = 12; 
-}
+		<!> We cannot print a field before its initialization: 	
+			
+		public class Chicken {
+			{System.out.println(eggs)} // DOES NOT COMPILE 
+			int eggs = 12; 
+		}
 
 
-Primitive datatypes: 
+
+	Primitive datatypes: 
 	
-	char ---> -128 to 127 
-	why? Because 0 is also positive.  
+		char ---> -128 to 127 
+		why? Because 0 is also positive.  
 
-	very important: 
-	
-		'short' is 	16-bit data type
-		'char' is also 	16-bit data type 
+		very important: 
 		
-		HOWEVER: the char is unsigned. It means it does not include negative values, so it has more memory for positive values. 
-		         In other words char can handle more positive values.
+			'short' is 	16-bit data type
+			'char' is also 	16-bit data type 
+			
+			HOWEVER: the char is unsigned. It means it does not include negative values, so it has more memory for positive values. 
+					 In other words char can handle more positive values.
+
+
+
+________________________________________________________________________________
+Java identifier rules: 
+	1. Identifiers must begin with a letter, a $ symbol, or a _ symbol
+	2. Identifiers can include numbers nut not start with them
+	3. Since Java 9 single _ (underscore) is not allowed as an identifier 
+	4. Java preserved words (keywords) cannot be used as identifier
+________________________________________________________________________________
+
+
+IMPORTANT: 
+	
+	--> On exam be wary of any local variable that is not initialized right away - it's possible that the code does not compile. 
+
+	
+==============================================================
+
+
+	Keyword - var 
+	
+		Starting Java 10 the 'var' keyword can be used instead of specifying the type of variable
+		
+		Formal name: "local variable type inference"
+			
+		Important notes: 
+			
+			1) var is used as a local variable in a constructor, method, or initializer block
+			2) the type of var is defined at compile time!
+			3) the value of a var can change, but the type cannot
+			4) var variable should be initialized on the same line as declaration. 
+			5) var cannot point to null without specifying the type 
+			6) java does not allow a 'var' in multiple variable declarations 
+			7) var is allowed to use var as an identifier 
+				HOWEVER --> you cannot use 'var' as class name, interface or enum name o_O
+			
+
+		Pratical use: 
+			
+			- var is useful for such situations like:
+				
+				PileOfPapersToFileInFilingCabinet pileOfPapersToFile = new PileOfPapersToFileInFilingCabinet();
+			
+			- with var it's shorter:
+				
+				var pileOfPapersToFile = new PileOfPapersToFileInFilingCabinet();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
