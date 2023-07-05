@@ -11,10 +11,23 @@ Binary operators:
 ______________________________________________________________
 
 
-
 	Numberic Promotion Rules:
 		
 		1. if two values have different types, the smaller type will be promted to higher one 
 		2. if one value is integral and another is decimal, the ingeral one will share the decimal's type 
-		3. byte short and char are promoted to int any time they’re used in arithmetic, even if neither of the operands is int
+		3. byte short and char are promoted to int any time they’re used in arithmetic, even if neither of the operands is int (however unary is not included)
 		4. After all promotion has occurred and the operands have the same data type, the resulting value will have the same data type as its promoted operands
+		
+
+______________________________________________________________
+
+	
+	Logical operators: & | ^
+	
+			- when used with boolean data types are called: logical operators
+			- when used with numberic data types are called: bitwise operators 
+			
+	Short-Circuit Operators: && || 
+	
+			- safe
+			- right side of the equation may never be evaluated if the result is already determined 
