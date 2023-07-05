@@ -1,0 +1,38 @@
+1. B, E, G
+2. D, F, G
+3. B, D, E, H 
+4. A, B, D, E
+5. A, E, H
+6. C, E 
+7. G
+8. B, E
+9. C, E, F 
+10. C
+11. A, D, E
+12. A, E, F
+13. B, D, H
+14. B, C, F 
+15. C, F, G
+16. A, C, D
+17. A, E, F, G
+18. F, A, G
+19. F
+20. D
+21. F, A, D
+22. H
+
+
+Working on mistakes: 
+	
+	5. A, D
+	There was totally no reason to include E) and H) since the code does not compile. 
+	The D) is also correct because float is being assigned to double. 
+
+	9. I answered everything correct but interesting notes to do here: 
+	
+		- It is possible that the object is be eligible for garbage collection but never removed (For example because the program finished too quickly) 
+		- The purpose of Garbage collector is to reclaim the used memory
+			reclaim - вернуть, восстанавливать, исправлять 
+
+	18. F, G
+	Again - no reason to choose option A) since the code does not compile which means it will not print anything. 
