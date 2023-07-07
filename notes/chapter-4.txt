@@ -1,0 +1,22 @@
+
+_____________________________________
+	switch() {}
+		
+		- suports enums, primitive numerics and strings
+		- does not support float, double, long and boolean types and their corresponding wrapper classes
+		- if a var resolves to one of the supported types then this var can also be used in switch statement
+		
+			* in Java 12 switch expressions were added  
+		
+	
+	cases: 
+		
+		for cases we can use only literals, enums and final variables: 
+			
+			final int = 5;
+			
+		It is also strictly required that the value for final constants is initialized with the line of declaration 
+		
+	
+	
+	---> ! switch case support numeric promotion that does not require an explicit cast. 

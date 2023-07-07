@@ -1,0 +1,43 @@
+1. A, D
+2. A, B, D
+3. B, C, D, F
+4. B
+5. A, C, F
+6. B
+7. D
+8. A
+9. D, E, A
+10. G
+11. D
+12. D
+13. F
+14. B, E, G
+15. D
+16. B
+17. F, C
+18. C
+19. B, F
+20. D, A
+
+
+Working on mistakes: 
+	
+	1. A, D, G
+		We can actually cast boolean values, since boolean is a type. 
+	
+	5. A, C
+		option F) says that ! is lower precdence than || and & which is not true
+
+	6. F 
+		option B) would be correct however on line 3 code does not compile. We cannot assign float value to long
+
+	10. G
+		everything is correct, just interesting note here: 
+			int a = 10, b = 4; 
+			short c = (byte) a + (byte) b; // DOES NOT COMPILE
+
+	20. A, D, E
+		option E) is so obvious, just did not notice
+
+
+	

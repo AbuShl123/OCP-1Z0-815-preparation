@@ -1,0 +1,29 @@
+1. A, B, C, E, F, G
+2. B
+3. E
+4. C, E
+5. B, D
+6. B, C, E
+7. E
+8. C
+9. D
+10. B, D, F
+11. F
+12. A, B, D
+13. E, B
+14. E
+15. A, E
+16. E
+17. F
+18. A, D, E
+19. D
+20. F
+
+====================================
+Working on mistakes: 
+	
+	9. G) 
+	     this is a very stupid mistake -- did not notice that while() loop has no parentheses
+
+
+one mistake only!! But ahh, wanted 0 mistakes 
