@@ -1,1 +1,3 @@
 *.gsheet
+/.idea/
+*.iml

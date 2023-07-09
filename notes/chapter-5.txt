@@ -1,0 +1,46 @@
+	String strip() methods: 
+	
+		- stripLeading() removes white spaces only in the beginning of the string
+		- stripTrailing() removes white spaces only in the end of the string
+
+important notes about string: 	
+	
+	"\t" - is a single character 
+	"\t" and "\n" are also deleted with strip/trim methods
+
+====================================================================================================================
+
+
+	StirngBuilder 
+
+		- the delete() method of StringBuilder may accpet very large value as second parameter and still compile: 
+	
+			StringBuilder sb = new StringBuilder("apple");
+			sb.delete(3, 100); // output: app
+			// the code compiles even though 100 is beyond the string lenght
+
+		- the replace() method is not the same as of String: 	
+		
+			StringBuilder replace(int startIndex, int endIndex, String newString); // <-- method signature
+
+			first it deletes the chars from startIndex to endIndex inclusively and then inserts a newString
+			basically, first delete() is calles then insert() 
+
+
+====================================================================================================================
+
+	
+		interesting note to make: 
+
+			'==' will throw compiler error if we try to compare two different objects 
+
+
+
+
+
+
+
+
+
+
+
